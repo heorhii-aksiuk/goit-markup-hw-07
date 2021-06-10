@@ -76,11 +76,11 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.main-header__container {
   display: flex;
 }
 
-.navigation,
+.main-header__navigation,
 .menu {
   display: flex;
   align-items: center;
@@ -96,11 +96,11 @@ img {
   line-height: 1.19;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu-link {
+.menu__link {
   position: relative;
 
   display: block;
@@ -128,7 +128,7 @@ img {
   background-color: var(--accent-color);
 }
 
-.contacts-link {
+.contacts__link {
   display: flex;
   align-items: center;
 
@@ -141,7 +141,7 @@ img {
   transition: color var(--main-duration) var(--main-timing-function);
 }
 
-.contacts-link-icon {
+.contacts__icon {
   display: block;
   margin-right: 10px;
 
@@ -154,21 +154,21 @@ img {
   margin-left: auto;
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.logo-accent,
+.logo__accent,
 .current,
 .menu-link:hover,
 .menu-link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
 }
 
-.contacts-link:hover .contacts-link-icon,
-.contacts-link:focus .contacts-link-icon {
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
   fill: var(--accent-color);
 }
 
