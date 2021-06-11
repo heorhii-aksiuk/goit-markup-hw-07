@@ -190,7 +190,7 @@ img {
   background-size: cover;
 }
 
-.heading {
+.hero__heading {
   padding-left: 280px;
   padding-right: 280px;
   margin-bottom: 30px;
@@ -203,7 +203,7 @@ img {
   text-transform: uppercase;
 }
 
-.hero-button {
+.hero__button {
   min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -226,8 +226,8 @@ img {
   cursor: pointer;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: #188ce8;
 }
 
