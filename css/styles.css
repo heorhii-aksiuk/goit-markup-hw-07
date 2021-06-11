@@ -306,18 +306,18 @@ img {
   padding-bottom: 94px;
 }
 
-.doing-list {
+.doing__list {
   display: flex;
 }
 
-.doing-item {
+.doing__item {
   position: relative;
 }
 
-.doing-item:not(:last-child) {
+.doing__item:not(:last-child) {
   margin-right: 30px;
 }
-.doing-description {
+.doing__description {
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -330,7 +330,7 @@ img {
   text-align: center;
 }
 
-.doing-description-block {
+.doing__block {
   position: absolute;
   bottom: 0;
   left: 0;
