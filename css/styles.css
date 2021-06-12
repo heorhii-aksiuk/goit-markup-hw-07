@@ -500,7 +500,8 @@ img {
   margin-right: 70px;
 }
 
-.footer-subheading {
+.social__subheading,
+.footer-form__subheading {
   display: block;
   margin-bottom: 20px;
 
@@ -510,16 +511,16 @@ img {
   color: var(--secondary-text-color);
 }
 
-.social-list {
+.social__list {
   display: flex;
   justify-content: space-between;
 }
 
-.social-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-item-link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -531,28 +532,25 @@ img {
   transition: background-color var(--main-duration) var(--main-timing-function);
 }
 
-.social-icon {
+.social__icon {
   display: inline-block;
   fill: var(--secondary-text-color);
 }
 
-.social-item-link:hover,
-.social-item-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent-color);
 }
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
+  margin-right: 0px;
 
   color: var(--secondary-text-color);
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
-.footer-contacts {
+.main-footer__contacts {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -563,11 +561,11 @@ img {
   transition: color var(--main-duration) var(--main-timing-function);
 }
 
-.footer-contacts-item:not(:last-child) {
+.main-footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-contacts-link {
+.main-footer__link {
   color: rgba(255, 255, 255, 0.6);
 
   transition: color var(--main-duration) var(--main-timing-function);
@@ -575,8 +573,8 @@ img {
 .footer-logo-accent,
 .address-link:focus,
 .address-link:hover,
-.footer-contacts-link:focus,
-.footer-contacts-link:hover {
+.main-footer__link:focus,
+.main-footer__link:hover {
   color: var(--accent-color);
 }
 
@@ -584,7 +582,7 @@ img {
   margin-left: auto;
 }
 
-.footer-form-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -595,17 +593,17 @@ img {
   color: var(--secondary-text-color);
 }
 
-.footer-form-input:focus {
+.footer-form__input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
   cursor: var(--accent-color);
 }
 
-.footer-form-input::placeholder {
+.footer-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-submit-button {
+.footer-form__button {
   position: relative;
   background-color: var(--accent-color);
   min-width: 200px;
@@ -628,12 +626,12 @@ img {
   cursor: pointer;
 }
 
-.footer-submit-button:hover,
-.footer-submit-button:focus {
+.footer-form__button:hover,
+.footer-form__button:focus {
   background-color: #188ce8;
 }
 
-.footer-submit-button-icon {
+.footer-form__icon {
   position: absolute;
   width: 24px;
   height: 24px;
