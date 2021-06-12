@@ -863,18 +863,18 @@ img {
   padding-bottom: 94px;
 }
 
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
 
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
+.filter__button {
   min-width: 73px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -897,8 +897,8 @@ img {
     box-shadow var(--main-duration) var(--main-timing-function);
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter__button:hover,
+.filter__button:focus {
   color: var(--secondary-text-color);
 
   background-color: var(--accent-color);
@@ -906,35 +906,35 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list {
+.card-list {
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-item {
+.card-list__item {
   margin: 15px;
 }
 
-.portfolio-item-link {
+.card-list__link {
   display: block;
 
   transition: box-shadow var(--main-duration) var(--main-timing-function);
 }
 
-.portfolio-item-link:hover,
-.portfolio-item-link:focus {
+.card-list__link:hover,
+.card-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-item-wrapper {
+.card {
   position: relative;
 
   overflow: hidden;
 }
 
-.portfolio-item-overlay {
+.card__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -956,12 +956,12 @@ img {
   transition: transform var(--main-duration) var(--main-timing-function);
 }
 
-.portfolio-item-link:hover .portfolio-item-overlay,
-.portfolio-item-link:focus .portfolio-item-overlay {
+.card-list__link:hover .card__overlay,
+.card-list__link:focus .card__overlay {
   transform: translateY(0%);
 }
 
-.card-content {
+.card__content {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -973,7 +973,7 @@ img {
   box-sizing: border-box;
 }
 
-.portfolio-heading {
+.card__heading {
   margin-bottom: 4px;
 
   font-size: 18px;
@@ -981,7 +981,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.portfolio-paragraph {
+.card__paragraph {
   color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.87;
