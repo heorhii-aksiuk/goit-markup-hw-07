@@ -136,6 +136,15 @@ body {
   justify-content: space-between;
 }
 
+.social__subheading {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
 .social__item:not(:last-child) {
   margin-right: 10px;
 }
@@ -678,32 +687,10 @@ body {
   margin-right: 70px;
 }
 
-.social__subheading,
-.footer-form__subheading {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-}
-
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-right: 0px;
-  color: var(--secondary-text-color);
-}
-
 .main-footer__contacts {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-}
-
-.address-link {
-  color: var(--secondary-text-color);
-  transition: color var(--main-duration) var(--main-timing-function);
 }
 
 .main-footer__item:not(:last-child) {
@@ -715,16 +702,37 @@ body {
   transition: color var(--main-duration) var(--main-timing-function);
 }
 
-.footer-logo-accent,
-.address-link:focus,
-.address-link:hover,
-.main-footer__link:focus,
-.main-footer__link:hover {
+.main-footer__link:focus, .main-footer__link:hover {
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  color: var(--secondary-text-color);
+}
+
+.address-link {
+  color: var(--secondary-text-color);
+  transition: color var(--main-duration) var(--main-timing-function);
+}
+
+.address-link:focus, .address-link:hover {
   color: var(--accent-color);
 }
 
 .footer-form {
   margin-left: auto;
+}
+
+.footer-form__subheading {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
 
 .footer-form__input {
@@ -770,8 +778,7 @@ body {
   cursor: pointer;
 }
 
-.footer-form__button:hover,
-.footer-form__button:focus {
+.footer-form__button:hover, .footer-form__button:focus {
   background-color: #188ce8;
 }
 

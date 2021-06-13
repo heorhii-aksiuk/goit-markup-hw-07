@@ -3,6 +3,16 @@
   justify-content: space-between;
 }
 
+.social__subheading {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
 .social__item:not(:last-child) {
   margin-right: 10px;
 }
