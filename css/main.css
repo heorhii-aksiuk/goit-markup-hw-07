@@ -649,8 +649,7 @@ body {
   transition: border var(--main-duration) var(--main-timing-function);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
