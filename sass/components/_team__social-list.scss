@@ -23,11 +23,11 @@
   background-color: var(--main-background-color);
 
   transition: background-color var(--main-duration) var(--main-timing-function);
-}
 
-.team__social-link:hover,
-.team__social-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .team__social-icon {
@@ -36,9 +36,9 @@
   fill: var(--icon-color);
 
   transition: fill var(--main-duration) var(--main-timing-function);
-}
 
-.team__social-link:hover .team__social-icon,
-.team__social-link:focus .team__social-icon {
-  fill: var(--secondary-text-color);
+  .team__social-link:hover &,
+  .team__social-link:focus & {
+    fill: var(--secondary-text-color);
+  }
 }

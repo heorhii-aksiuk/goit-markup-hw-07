@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -25,7 +26,9 @@
   overflow: hidden;
 }
 
-/* .visually-hidden {
+/* 
+Альтернативный вариант от Олексея
+.visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -113,8 +116,7 @@ body {
   transition: background-color var(--main-duration) var(--main-timing-function);
 }
 
-.team__social-link:hover,
-.team__social-link:focus {
+.team__social-link:hover, .team__social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -149,14 +151,13 @@ body {
   transition: background-color var(--main-duration) var(--main-timing-function);
 }
 
+.social__link:hover, .social__link:focus {
+  background-color: var(--accent-color);
+}
+
 .social__icon {
   display: inline-block;
   fill: var(--secondary-text-color);
-}
-
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--accent-color);
 }
 
 .backdrop {
@@ -195,9 +196,9 @@ body {
   top: 8px;
   right: 8px;
   padding: 5px;
+  background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
   cursor: pointer;
 }
 
@@ -242,9 +243,13 @@ body {
   left: 15px;
   transform: translateY(-50%);
   display: block;
-  cursor: pointer;
-  transition: fill var(--main-duration) var(--main-timing-function);
   fill: var(--main-text-color);
+  transition: fill var(--main-duration) var(--main-timing-function);
+  cursor: pointer;
+}
+
+.modal__input:focus + .modal__icon {
+  fill: var(--accent-color);
 }
 
 .modal__input {
@@ -253,21 +258,17 @@ body {
   height: 40px;
   margin-top: 4px;
   padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   transition: border var(--main-duration) var(--main-timing-function);
 }
 
 .modal__input:focus {
   border: 1px solid #2196f3;
   outline: none;
-}
-
-.modal__input:focus + .modal__icon {
-  fill: var(--accent-color);
 }
 
 .modal__textarea {
@@ -354,8 +355,7 @@ body {
   transition: background-color var(--main-duration) var(--main-timing-function);
 }
 
-.modal__submit-button:hover,
-.modal__submit-button:focus {
+.modal__submit-button:hover, .modal__submit-button:focus {
   background-color: #188ce8;
 }
 
