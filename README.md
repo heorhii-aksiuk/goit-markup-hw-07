@@ -1,2 +1,2 @@
 # goit-markup-hw-06
-Репозиторий домашнего задания 06. HTML+CSS (Разметка форм; Стилизация форм)
+GoIT. Markup. Homework #6 (SASS, BEM)
