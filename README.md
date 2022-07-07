@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-GoIT. Markup. Homework #6 (SASS, BEM)
+# goit-markup-hw-07
+GoIT. Markup. Homework #7 (SASS, BEM)
