@@ -1,2 +1,2 @@
 # goit-markup-hw-07
-GoIT. Markup. Homework #7 (SASS, BEM)
+GoIT. HTML&CSS. Homework #7 (SASS, BEM)
